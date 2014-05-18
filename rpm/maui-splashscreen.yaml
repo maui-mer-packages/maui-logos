@@ -7,16 +7,13 @@ URL: http://www.maui-project.org
 License: CC-BY-SA 3.0
 Sources:
   - maui-%{version}.tar.xz
-  - splash-maui-startup-640x480.png
-  - splash-maui-shutdown-640x480.png
-  - livecd-splash.jpg
+SetupOptions: -q -n %{name}-%{version}/images
 Description: |
     The %{name} package contains artwork for Maui.
 Provides:
     - boot-splash-screen
 Obsoletes:
     - generic-backgrounds
-NoSetup: yes
 Configure: none
 Builder: none
 BuildArch: noarch

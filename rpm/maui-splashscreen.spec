@@ -16,9 +16,6 @@ License:    CC-BY-SA 3.0
 BuildArch:  noarch
 URL:        http://www.maui-project.org
 Source0:    maui-%{version}.tar.xz
-Source1:    splash-maui-startup-640x480.png
-Source2:    splash-maui-shutdown-640x480.png
-Source3:    livecd-splash.jpg
 Source100:  maui-splashscreen.yaml
 Provides:   boot-splash-screen
 Obsoletes:   generic-backgrounds
@@ -28,7 +25,7 @@ The %{name} package contains artwork for Maui.
 
 
 %prep
-# No setup
+%setup -q -n %{name}-%{version}/images
 
 # >> setup
 # << setup
@@ -45,14 +42,14 @@ The %{name} package contains artwork for Maui.
 %install
 rm -rf %{buildroot}
 # >> install pre
-install -D -m 644 %{SOURCE0} %{buildroot}%{_datadir}/plymouth/splash-maui-startup-640x480.png
-install -D -m 644 %{SOURCE1} %{buildroot}%{_datadir}/plymouth/splash-maui-shutdown-640x480.png
+install -D -m 644 splash-maui-startup-640x480.png %{buildroot}%{_datadir}/plymouth/splash-maui-startup-640x480.png
+install -D -m 644 splash-maui-shutdown-640x480.png %{buildroot}%{_datadir}/plymouth/splash-maui-shutdown-640x480.png
 ln -s splash-maui-startup-640x480.png %{buildroot}%{_datadir}/plymouth/splash.png
 ln -s splash-maui-shutdown-640x480.png %{buildroot}%{_datadir}/plymouth/halt.png
 ln -s splash-maui-shutdown-640x480.png %{buildroot}%{_datadir}/plymouth/poweroff.png
 ln -s splash-maui-shutdown-640x480.png %{buildroot}%{_datadir}/plymouth/reboot.png
 
-install -D -m 644 %{SOURCE2} %{buildroot}%{_libdir}/anaconda-runtime/syslinux-vesa-splash.jpg
+install -D -m 644 livecd-splash.jpg %{buildroot}%{_libdir}/anaconda-runtime/syslinux-vesa-splash.jpg
 # << install pre
 
 # >> install post
