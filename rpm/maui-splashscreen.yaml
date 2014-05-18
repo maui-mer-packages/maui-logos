@@ -1,0 +1,29 @@
+Name: maui-splashscreen
+Summary: Maui splash screen
+Version: 0.1.0
+Release: 1
+Group: Applications/Multimedia
+URL: http://www.maui-project.org
+License: CC-BY-SA 3.0
+Sources:
+  - splash-maui-startup-640x480.png
+  - splash-maui-shutdown-640x480.png
+  - livecd-splash.jpg
+Description: |
+    The %{name} package contains artwork for Maui.
+Provides:
+    - boot-splash-screen
+Obsoletes:
+    - generic-backgrounds
+NoSetup: yes
+Configure: none
+Builder: none
+BuildArch: noarch
+Files:
+    - "%{_datadir}/plymouth/splash-maui-startup-640x480.png"
+    - "%{_datadir}/plymouth/splash-maui-shutdown-640x480.png"
+    - "%{_datadir}/plymouth/splash.png"
+    - "%{_datadir}/plymouth/halt.png"
+    - "%{_datadir}/plymouth/poweroff.png"
+    - "%{_datadir}/plymouth/reboot.png"
+    - "%{_libdir}/anaconda-runtime/syslinux-vesa-splash.jpg"
