@@ -15,7 +15,7 @@ Group:      Applications/Multimedia
 License:    CC-BY-SA 3.0
 BuildArch:  noarch
 URL:        http://www.maui-project.org
-Source0:    maui-%{version}.tar.xz
+Source0:    maui-splashscreen-%{version}.tar.xz
 Source100:  maui-splashscreen.yaml
 Provides:   boot-splash-screen
 Obsoletes:   generic-backgrounds

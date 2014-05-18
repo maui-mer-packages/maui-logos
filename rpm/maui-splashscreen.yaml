@@ -6,7 +6,7 @@ Group: Applications/Multimedia
 URL: http://www.maui-project.org
 License: CC-BY-SA 3.0
 Sources:
-  - maui-%{version}.tar.xz
+  - maui-splashscreen-%{version}.tar.xz
 SetupOptions: -q -n %{name}-%{version}/images
 Description: |
     The %{name} package contains artwork for Maui.
