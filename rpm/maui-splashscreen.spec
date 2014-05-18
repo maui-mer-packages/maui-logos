@@ -15,9 +15,10 @@ Group:      Applications/Multimedia
 License:    CC-BY-SA 3.0
 BuildArch:  noarch
 URL:        http://www.maui-project.org
-Source0:    splash-maui-startup-640x480.png
-Source1:    splash-maui-shutdown-640x480.png
-Source2:    livecd-splash.jpg
+Source0:    maui-%{version}.tar.xz
+Source1:    splash-maui-startup-640x480.png
+Source2:    splash-maui-shutdown-640x480.png
+Source3:    livecd-splash.jpg
 Source100:  maui-splashscreen.yaml
 Provides:   boot-splash-screen
 Obsoletes:   generic-backgrounds
