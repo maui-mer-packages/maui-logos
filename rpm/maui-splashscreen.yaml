@@ -12,8 +12,12 @@ Description: |
     The %{name} package contains artwork for Maui.
 Provides:
     - boot-splash-screen
+    - generic-logos
+    - system-logos
 Obsoletes:
     - generic-backgrounds
+    - generic-logos
+    - system-logos
 Configure: none
 Builder: none
 BuildArch: noarch

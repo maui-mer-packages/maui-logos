@@ -18,7 +18,11 @@ URL:        http://www.maui-project.org
 Source0:    maui-splashscreen-%{version}.tar.xz
 Source100:  maui-splashscreen.yaml
 Provides:   boot-splash-screen
+Provides:   generic-logos
+Provides:   system-logos
 Obsoletes:   generic-backgrounds
+Obsoletes:   generic-logos
+Obsoletes:   system-logos
 
 %description
 The %{name} package contains artwork for Maui.
