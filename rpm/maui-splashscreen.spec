@@ -9,7 +9,7 @@ Name:       maui-splashscreen
 # << macros
 
 Summary:    Maui splash screen
-Version:    0.1.0
+Version:    0.2.0
 Release:    1
 Group:      Applications/Multimedia
 License:    CC-BY-SA 3.0
