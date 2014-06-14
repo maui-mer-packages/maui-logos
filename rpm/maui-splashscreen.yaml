@@ -28,5 +28,6 @@ Files:
     - "%{_datadir}/plymouth/halt.png"
     - "%{_datadir}/plymouth/poweroff.png"
     - "%{_datadir}/plymouth/reboot.png"
+    - "%{_datadir}/pixmaps/system-logo-white.png"
     - "%{_libdir}/anaconda-runtime/syslinux-vesa-splash.png"
     - "%{_libdir}/anaconda-runtime/syslinux-vesa-splash.jpg"

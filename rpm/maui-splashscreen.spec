@@ -53,6 +53,8 @@ ln -s splash-maui-shutdown-640x480.png %{buildroot}%{_datadir}/plymouth/halt.png
 ln -s splash-maui-shutdown-640x480.png %{buildroot}%{_datadir}/plymouth/poweroff.png
 ln -s splash-maui-shutdown-640x480.png %{buildroot}%{_datadir}/plymouth/reboot.png
 
+install -D -m 644 splash-maui-startup-640x480.png %{buildroot}%{_datadir}/pixmaps/system-logo-white.png
+
 install -D -m 644 livecd-splash.png %{buildroot}%{_libdir}/anaconda-runtime/syslinux-vesa-splash.png
 install -D -m 644 livecd-splash.jpg %{buildroot}%{_libdir}/anaconda-runtime/syslinux-vesa-splash.jpg
 # << install pre
@@ -68,6 +70,7 @@ install -D -m 644 livecd-splash.jpg %{buildroot}%{_libdir}/anaconda-runtime/sysl
 %{_datadir}/plymouth/halt.png
 %{_datadir}/plymouth/poweroff.png
 %{_datadir}/plymouth/reboot.png
+%{_datadir}/pixmaps/system-logo-white.png
 %{_libdir}/anaconda-runtime/syslinux-vesa-splash.png
 %{_libdir}/anaconda-runtime/syslinux-vesa-splash.jpg
 # >> files
