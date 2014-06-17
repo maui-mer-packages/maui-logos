@@ -1,0 +1,43 @@
+Name: maui-logos
+Summary: Maui-related icons and pictures
+Version: 0.3.0
+Release: 1
+Group: System/Base
+URL: http://www.maui-project.org
+License: Licensed only for approved usage, see COPYING for details.
+Sources:
+  - "%{name}-%{version}.tar.xz"
+SetupOptions: -q -n %{name}-%{version}/images
+Description: |
+  The %{name} package contains image files which incorporate the
+  Maui logo.
+
+  This package and its content may not be distributed with anything but
+  unmodified packages from Maui Project.
+
+  See the included COPYING file for full information on copying and
+  redistribution of this package and its contents.
+Configure: none
+Builder: none
+BuildArch: noarch
+Files:
+    - "%{_datadir}/pixmaps/system-logo-white.png"
+    - "%{_libdir}/anaconda-runtime/syslinux-vesa-splash.png"
+    - "%{_libdir}/anaconda-runtime/syslinux-vesa-splash.jpg"
+
+SubPackages:
+    - Name: maui-splash-screen
+      AsWholeName: True
+      Summary: Maui boot splash screens
+      Description: |
+        This package contains boot splash screens for Maui.
+      Group: System/Base
+      Provides:
+          - boot-splash-screen
+      Files:
+          - "%{_datadir}/plymouth/splash-maui-startup-640x480.png"
+          - "%{_datadir}/plymouth/splash-maui-shutdown-640x480.png"
+          - "%{_datadir}/plymouth/splash.png"
+          - "%{_datadir}/plymouth/halt.png"
+          - "%{_datadir}/plymouth/poweroff.png"
+          - "%{_datadir}/plymouth/reboot.png"
