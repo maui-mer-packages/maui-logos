@@ -23,7 +23,6 @@ BuildArch: noarch
 Files:
     - "%{_datadir}/pixmaps/system-logo-white.png"
     - "%{_libdir}/anaconda-runtime/syslinux-vesa-splash.png"
-    - "%{_libdir}/anaconda-runtime/syslinux-vesa-splash.jpg"
 
 SubPackages:
     - Name: maui-splash-screen
