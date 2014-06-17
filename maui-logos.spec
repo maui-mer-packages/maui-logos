@@ -9,7 +9,7 @@ Name:       maui-logos
 # << macros
 
 Summary:    Maui-related icons and pictures
-Version:    0.3.0
+Version:    0.4.0
 Release:    1
 Group:      System/Base
 License:    Licensed only for approved usage, see COPYING for details.
