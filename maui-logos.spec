@@ -40,7 +40,7 @@ This package contains boot splash screens for Maui.
 
 
 %prep
-%setup -q -n %{name}-%{version}/images
+%setup -q -n %{name}-%{version}
 
 # >> setup
 # << setup

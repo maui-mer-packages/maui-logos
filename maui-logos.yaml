@@ -7,7 +7,7 @@ URL: http://www.maui-project.org
 License: Licensed only for approved usage, see COPYING for details.
 Sources:
   - "%{name}-%{version}.tar.xz"
-SetupOptions: -q -n %{name}-%{version}/images
+SetupOptions: -q -n %{name}-%{version}
 Description: |
   The %{name} package contains image files which incorporate the
   Maui logo.
