@@ -15,7 +15,10 @@ Group:      System/Base
 License:    Licensed only for approved usage, see COPYING for details.
 BuildArch:  noarch
 URL:        http://www.maui-project.org
-Source0:    %{name}-%{version}.tar.xz
+Source0:    splash-maui-startup-640x480.png
+Source1:    splash-maui-shutdown-640x480.png
+Source2:    system-logo-white.png
+Source3:    livecd-splash.png
 Source100:  maui-logos.yaml
 
 %description
@@ -57,16 +60,16 @@ This package contains boot splash screens for Maui.
 %install
 rm -rf %{buildroot}
 # >> install pre
-install -D -m 644 splash-maui-startup-640x480.png %{buildroot}%{_datadir}/plymouth/splash-maui-startup-640x480.png
-install -D -m 644 splash-maui-shutdown-640x480.png %{buildroot}%{_datadir}/plymouth/splash-maui-shutdown-640x480.png
+install -D -m 644 %{SOURCE0} %{buildroot}%{_datadir}/plymouth/splash-maui-startup-640x480.png
+install -D -m 644 %{SOURCE1} %{buildroot}%{_datadir}/plymouth/splash-maui-shutdown-640x480.png
 ln -s splash-maui-startup-640x480.png %{buildroot}%{_datadir}/plymouth/splash.png
 ln -s splash-maui-shutdown-640x480.png %{buildroot}%{_datadir}/plymouth/halt.png
 ln -s splash-maui-shutdown-640x480.png %{buildroot}%{_datadir}/plymouth/poweroff.png
 ln -s splash-maui-shutdown-640x480.png %{buildroot}%{_datadir}/plymouth/reboot.png
 
-install -D -m 644 system-logo-white.png %{buildroot}%{_datadir}/pixmaps/system-logo-white.png
+install -D -m 644 %{SOURCE2} %{buildroot}%{_datadir}/pixmaps/system-logo-white.png
 
-install -D -m 644 livecd-splash.png %{buildroot}%{_libdir}/anaconda-runtime/syslinux-vesa-splash.png
+install -D -m 644 %{SOURCE3} %{buildroot}%{_libdir}/anaconda-runtime/syslinux-vesa-splash.png
 # << install pre
 
 # >> install post

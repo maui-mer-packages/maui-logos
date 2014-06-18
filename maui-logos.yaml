@@ -6,8 +6,10 @@ Group: System/Base
 URL: http://www.maui-project.org
 License: Licensed only for approved usage, see COPYING for details.
 Sources:
-  - "%{name}-%{version}.tar.xz"
-SetupOptions: -q -n %{name}-%{version}
+    - splash-maui-startup-640x480.png
+    - splash-maui-shutdown-640x480.png
+    - system-logo-white.png
+    - livecd-splash.png
 Description: |
   The %{name} package contains image files which incorporate the
   Maui logo.
