@@ -20,6 +20,7 @@ Source1:    splash-maui-shutdown-640x480.png
 Source2:    system-logo-white.png
 Source3:    livecd-splash.png
 Source100:  maui-logos.yaml
+Provides:   system-logos
 
 %description
 The %{name} package contains image files which incorporate the
