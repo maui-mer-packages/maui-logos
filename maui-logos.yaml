@@ -1,7 +1,7 @@
 Name: maui-logos
 Summary: Maui-related icons and pictures
 Version: 0.4.0
-Release: 1
+Release: 2
 Group: System/Base
 URL: http://www.maui-project.org
 License: Licensed only for approved usage, see COPYING for details.
@@ -22,6 +22,7 @@ Description: |
 Configure: none
 Builder: none
 BuildArch: noarch
+NoSetup: True
 Files:
     - "%{_datadir}/pixmaps/system-logo-white.png"
     - "%{_libdir}/anaconda-runtime/syslinux-vesa-splash.png"

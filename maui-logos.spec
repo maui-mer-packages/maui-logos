@@ -10,7 +10,7 @@ Name:       maui-logos
 
 Summary:    Maui-related icons and pictures
 Version:    0.4.0
-Release:    1
+Release:    2
 Group:      System/Base
 License:    Licensed only for approved usage, see COPYING for details.
 BuildArch:  noarch
@@ -43,7 +43,7 @@ This package contains boot splash screens for Maui.
 
 
 %prep
-%setup -q -n %{name}-%{version}
+# No setup
 
 # >> setup
 # << setup
