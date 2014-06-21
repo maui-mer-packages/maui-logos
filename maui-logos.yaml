@@ -23,13 +23,22 @@ Configure: none
 Builder: none
 BuildArch: noarch
 Provides:
-    - system-logos
+    - system-logo
+Requires:
+    - maui-syslinux-splash
 NoSetup: True
 Files:
     - "%{_datadir}/pixmaps/system-logo-white.png"
-    - "%{_libdir}/anaconda-runtime/syslinux-vesa-splash.png"
 
 SubPackages:
+    - Name: maui-syslinux-splash
+      AsWholeName: True
+      Summary: Maui splash screen for boot loaders
+      Description: |
+        This package contains Maui splash screen for boot loaders.
+      Group: System/Base
+      Files:
+          - "%{_libdir}/anaconda-runtime/syslinux-vesa-splash.png"
     - Name: maui-splash-screen
       AsWholeName: True
       Summary: Maui boot splash screens
