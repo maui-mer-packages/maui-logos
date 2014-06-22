@@ -23,7 +23,7 @@ Configure: none
 Builder: none
 BuildArch: noarch
 Provides:
-    - system-logo
+    - system-logos
 Requires:
     - maui-syslinux-splash
 NoSetup: True

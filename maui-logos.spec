@@ -21,7 +21,7 @@ Source2:    system-logo-white.png
 Source3:    livecd-splash.png
 Source100:  maui-logos.yaml
 Requires:   maui-syslinux-splash
-Provides:   system-logo
+Provides:   system-logos
 
 %description
 The %{name} package contains image files which incorporate the
