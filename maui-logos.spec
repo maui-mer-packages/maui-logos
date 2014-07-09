@@ -18,7 +18,6 @@ URL:        http://www.maui-project.org
 Source0:    splash-maui-startup-640x480.png
 Source1:    splash-maui-shutdown-640x480.png
 Source2:    system-logo-white.png
-Source3:    livecd-splash.png
 Source100:  maui-logos.yaml
 Requires:   maui-syslinux-splash
 Provides:   system-logos
@@ -32,15 +31,6 @@ unmodified packages from Maui Project.
 
 See the included COPYING file for full information on copying and
 redistribution of this package and its contents.
-
-
-%package -n maui-syslinux-splash
-Summary:    Maui splash screen for boot loaders
-Group:      System/Base
-Requires:   %{name} = %{version}-%{release}
-
-%description -n maui-syslinux-splash
-This package contains Maui splash screen for boot loaders.
 
 
 %package -n maui-splash-screen
@@ -79,8 +69,6 @@ ln -s splash-maui-shutdown-640x480.png %{buildroot}%{_datadir}/plymouth/poweroff
 ln -s splash-maui-shutdown-640x480.png %{buildroot}%{_datadir}/plymouth/reboot.png
 
 install -D -m 644 %{SOURCE2} %{buildroot}%{_datadir}/pixmaps/system-logo-white.png
-
-install -D -m 644 %{SOURCE3} %{buildroot}%{_libdir}/anaconda-runtime/syslinux-vesa-splash.png
 # << install pre
 
 # >> install post
@@ -91,12 +79,6 @@ install -D -m 644 %{SOURCE3} %{buildroot}%{_libdir}/anaconda-runtime/syslinux-ve
 %{_datadir}/pixmaps/system-logo-white.png
 # >> files
 # << files
-
-%files -n maui-syslinux-splash
-%defattr(-,root,root,-)
-%{_libdir}/anaconda-runtime/syslinux-vesa-splash.png
-# >> files maui-syslinux-splash
-# << files maui-syslinux-splash
 
 %files -n maui-splash-screen
 %defattr(-,root,root,-)

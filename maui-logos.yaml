@@ -9,7 +9,6 @@ Sources:
     - splash-maui-startup-640x480.png
     - splash-maui-shutdown-640x480.png
     - system-logo-white.png
-    - livecd-splash.png
 Description: |
   The %{name} package contains image files which incorporate the
   Maui logo.
@@ -31,14 +30,6 @@ Files:
     - "%{_datadir}/pixmaps/system-logo-white.png"
 
 SubPackages:
-    - Name: maui-syslinux-splash
-      AsWholeName: True
-      Summary: Maui splash screen for boot loaders
-      Description: |
-        This package contains Maui splash screen for boot loaders.
-      Group: System/Base
-      Files:
-          - "%{_libdir}/anaconda-runtime/syslinux-vesa-splash.png"
     - Name: maui-splash-screen
       AsWholeName: True
       Summary: Maui boot splash screens
