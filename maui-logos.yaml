@@ -23,8 +23,6 @@ Builder: none
 BuildArch: noarch
 Provides:
     - system-logos
-Requires:
-    - maui-syslinux-splash
 NoSetup: True
 Files:
     - "%{_datadir}/pixmaps/system-logo-white.png"
